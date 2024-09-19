@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Requirement Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="language-toggle">
+                <button id="enBtn">English</button>
+                <button id="hiBtn">हिंदी</button>
+            </div>
+            <h1 id="form-title">Fertilizer Requirement Predictor</h1>
+            <form id="fertilizerForm">
+                <label id="name-label" for="farmerName">Farmer's Name</label>
+                <input type="text" id="farmerName" name="farmerName" placeholder="Enter your name" required>
+                
+                <label id="land-label" for="landSize">Land Size (in acres)</label>
+                <input type="number" id="landSize" name="landSize" placeholder="Enter land size" required>
+                
+                <label id="crop-label" for="cropType">Crop Type</label>
+                <select id="cropType" name="cropType" required>
+                    <option value="" disabled selected>Select your crop</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Maize">Maize</option>
+                    <option value="Barley">Barley</option>
+                    <option value="Sugarcane">Sugarcane</option>
+                </select>
+                
+                <label id="soil-label" for="soilType">Soil Type</label>
+                <select id="soilType" name="soilType" required>
+                    <option value="" disabled selected>Select soil type</option>
+                    <option value="Sandy">Sandy</option>
+                    <option value="Loamy">Loamy</option>
+                    <option value="Clay">Clay</option>
+                    <option value="Silty">Silty</option>
+                </select>
+                
+                <label id="rainfall-label" for="rainfall">Average Rainfall (in mm)</label>
+                <input type="number" id="rainfall" name="rainfall" placeholder="Enter average rainfall" required>
+
+                <label id="irrigation-label" for="irrigationLevel">Irrigation Level (in inches)</label>
+                <input type="number" id="irrigationLevel" name="irrigationLevel" placeholder="Enter irrigation level" required>
+                
+                <label id="fertilizer-label" for="previousFertilizer">Previous Fertilizer (kg/acre)</label>
+                <input type="number" id="previousFertilizer" name="previousFertilizer" placeholder="Enter previous fertilizer use" required>
+
+                <label id="organic-label" for="organicMatter">Organic Matter (%)</label>
+                <input type="number" id="organicMatter" name="organicMatter" placeholder="Enter organic matter content" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
